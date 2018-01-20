@@ -1,6 +1,6 @@
 %Script to model the geotherm of Siberia craton. This computes the temp.
 %assuming a two-layer conductive geotherm.
-%The temperature formular is obtianed
+%The temperature formular is obtained
 %by solving for a 1-D steady state heat equation.
 %C Idoko, 2016.
 A1 = 0.67e-6;%regional crustal heat production (model from Marshal and Junpart (2005));
@@ -32,6 +32,7 @@ z = 0:1:150000;%redefines z
 figure(10)
 plot(T,z/1000),hold on
 set(gca,'Ydir','reverse')
+%OPTIONAL: to add the variation of Curie-Temp modle with pressure/depth in this model;
 plot(Tc(1:150001),z/1000);%plots Curie temperature variation with pressure/depth;
 set(gca,'Ydir','reverse')
 xlabel('Temperature(deg-C)','FontSize',28,'FontWeight','bold'),ylabel('Depth(km)','FontSize',28,'FontWeight','bold')
