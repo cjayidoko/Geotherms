@@ -1,4 +1,7 @@
-%Script to model the geotherm of Siberia craton;
+%Script to model the geotherm of Siberia craton. This computes the temp.
+%assuming a two-layer conductive geotherm.
+%The temperature formular is obtianed
+%by solving for a 1-D steady state heat equation.
 %C Idoko, 2016.
 A1 = 0.67e-6;%regional crustal heat production (model from Marshal and Junpart (2005));
 k = 2.7;%conductivity of crust in W/m^3;
